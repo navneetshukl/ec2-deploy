@@ -5,7 +5,7 @@ FROM golang:1.21-alpine
 WORKDIR /app
 
 # Copy the Go module files and download dependencies
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # Copy the source code into the container
